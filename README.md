@@ -203,3 +203,42 @@ If You Are Bug Bounty Hunter User This App For
 ```
 
 ## Final Thought : If You Like This Script And Contribute And Make This Better Contact Me At Twitter - My ID : [@Vikrant_infosec](https://twitter.com/Vikrant_infosec)
+
+## Credits Tools USED in 'HuntTheBug Tool' 
+
+1. byp4xx - https://github.com/lobuhi/byp4xx
+2. 403bypasser - https://github.com/yunemse48/403bypasser
+3. bypass-403 - https://github.com/iamj0ker/bypass-403
+4. dirsearch - https://github.com/maurosoria/dirsearch
+5. gau - https://github.com/lc/gau
+6. waybackurls - https://github.com/tomnomnom/waybackurls
+7. ffuf - https://github.com/ffuf/ffuf
+8. gf - https://github.com/tomnomnom/gf
+9. Gf-Patterns - https://github.com/1ndianl33t/Gf-Patterns
+10. ParamSpider - https://github.com/devanshbatham/ParamSpider
+11. qsreplace - https://github.com/tomnomnom/qsreplace
+12. httpx - https://github.com/projectdiscovery/httpx
+13. JSFinder - https://github.com/Threezh1/JSFinder
+14. jsvar.sh -https://gist.githubusercontent.com/KathanP19/d2cda2f99c0b60d64b76ee6039b37e47/raw/eb105a4de06502b2732df9d682c61189c3703685/jsvar.sh
+15. SecretFinder - https://github.com/m4ll0k/SecretFinder
+16. nuclei - https://github.com/projectdiscovery/nuclei
+17. ipinfo - https://github.com/ipinfo/cli
+18. knockknock - https://github.com/harleo/knockknock
+19. naabu - https://github.com/projectdiscovery/naabu
+20. Amass - https://github.com/OWASP/Amass
+21. subfinder - https://github.com/projectdiscovery/subfinder
+22. Sublist3r - https://github.com/aboul3la/Sublist3r
+23. SonarSearch - https://github.com/Cgboal/SonarSearch
+24. assetfinder - https://github.com/tomnomnom/assetfinder
+25. Findomain - https://github.com/Findomain/Findomain
+26. github-subdomains -https://github.com/gwen001/github-subdomains
+27. subscraper -https://github.com/m8r0wn/subscraper
+28. httprobe - https://github.com/tomnomnom/httprobe
+29. hakcheckurl - https://github.com/hakluke/hakcheckurl
+30. subjack - https://github.com/haccer/subjack
+
+### Other Open Source Tools From Kali APT
+
+zsh curl wget command-not-found git htop ncdu glances exa zsh-autosuggestions zsh-syntax-highlighting python-is-python3 python3-pip parallel at tree cron golang-go amass subfinder sublist3r ffuf dirsearch naabu figlet
+
+Thanks All Open Source Tool Maker 🙏🙏🙏🙏
