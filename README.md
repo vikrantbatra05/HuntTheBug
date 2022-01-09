@@ -13,6 +13,8 @@ We Test it On 1GB Ram + 1 Core CPU And System Crash.
 ## Installation  Process
 
 ```
+apt install zsh git -y
+
 cd ~
 
 git clone https://github.com/vikrantbatra05/HuntTheBug
