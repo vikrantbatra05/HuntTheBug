@@ -263,7 +263,6 @@ cat $urls_dir/final-url.txt | gf interestingparams | tee -a $gfurls/interestingp
 sleep 10
 
 cat $urls_dir/final-url.txt | gf interestingsubs | tee -a $gfurls/interestingsubs
-
 sleep 10
 
 cat $urls_dir/final-url.txt | gf ip | tee -a $gfurls/ip
