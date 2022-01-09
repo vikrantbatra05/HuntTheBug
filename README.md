@@ -1,5 +1,3 @@
-<img src=”https://komarev.com/ghpvc/?username=vikrantbatra05" alt=”tomkaX” />
-
 # HuntTheBug
 
 Basic Recon For Bug Bounty Hunter - "HuntTheBug" is Basic Scripts For Sub Domain Enumeration> Live Domain Enumeration > Sub Domain Hijack > URL + JavaScript Scan > Dir Brute Forcing > Open Port Check With Telegram Bot Notification 
