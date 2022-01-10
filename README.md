@@ -242,3 +242,8 @@ If You Are Bug Bounty Hunter User This App For
 zsh curl wget command-not-found git htop ncdu glances exa zsh-autosuggestions zsh-syntax-highlighting python-is-python3 python3-pip parallel at tree cron golang-go amass subfinder sublist3r ffuf dirsearch naabu figlet
 
 Thanks All Open Source Tool Maker 🙏🙏🙏🙏
+
+<br>
+
+<h3 align="left">Support:</h3>
+<p><a href="https://www.buymeacoffee.com/vikrantbatra05"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="vikrantbatra05" /></a></p><br><br>
