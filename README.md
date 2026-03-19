@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/vikrantbatra05/HuntTheBug/main/assets/logo.png" alt="HuntTheBug Logo" width="200"/>
-
 # 🔍 HuntTheBug
 
 [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://opensource.org/licenses/GPL-3.0)
@@ -258,11 +256,11 @@ nano ~/HuntTheBug/conf.zsh
 
 ## 🎮 Usage Guide
 
-### � Choose Your Mission
+### 🎯 Choose Your Mission
 
 <div align="center">
 
-| � **Medium Scope** | 🎯 **Small Scope** | 🏢 **Organization** | 🔓 **403 Bypass** |
+| 🌐 Medium Scope | 🎯 Small Scope | 🏢 Organization | 🔓 403 Bypass |
 |-------------------|-------------------|-------------------|-------------------|
 | `*.target.com` | `app.target.com` | `company_name` | `https://target.com` |
 | Comprehensive recon | Focused analysis | Asset discovery | Access testing |
@@ -347,18 +345,18 @@ nano ~/HuntTheBug/conf.zsh
 
 ```mermaid
 graph TD
-    A[🎯 Target Input] --> B[1️⃣ Subdomain Discovery]
-    B --> C[2️⃣ Live Verification]
-    C --> D[3️⃣ Status Analysis]
-    D --> E[4️⃣ Takeover Detection]
-    E --> F[5️⃣ URL Discovery]
-    F --> G[6️⃣ Live URL Testing]
-    G --> H[7️⃣ Parameter Mining]
-    H --> I[8️⃣ JavaScript Analysis]
-    I --> J[9️⃣ Directory Fuzzing]
-    J --> K[🔟 Port Scanning]
-    K --> L[1️⃣1️⃣ Vulnerability Scanning]
-    L --> M[📊 Report Generation]
+    A[Target Input] --> B[1. Subdomain Discovery]
+    B --> C[2. Live Verification]
+    C --> D[3. Status Analysis]
+    D --> E[4. Takeover Detection]
+    E --> F[5. URL Discovery]
+    F --> G[6. Live URL Testing]
+    G --> H[7. Parameter Mining]
+    H --> I[8. JavaScript Analysis]
+    I --> J[9. Directory Fuzzing]
+    J --> K[10. Port Scanning]
+    K --> L[11. Vulnerability Scanning]
+    L --> M[Report Generation]
 ```
 
 </div>
@@ -383,14 +381,14 @@ graph TD
 
 ```mermaid
 graph LR
-    A[🎯 Target] --> B[URL Discovery]
+    A[Target] --> B[URL Discovery]
     B --> C[Live Testing]
     C --> D[Pattern Analysis]
     D --> E[Parameter Mining]
     E --> F[JS Analysis]
     F --> G[Directory Fuzzing]
     G --> H[Vulnerability Scanning]
-    H --> I[📊 Final Report]
+    H --> I[Final Report]
 ```
 
 </div>
@@ -412,11 +410,11 @@ graph LR
 
 ```mermaid
 graph TD
-    A[🏢 Organization] --> B[Reverse WHOIS]
+    A[Organization] --> B[Reverse WHOIS]
     B --> C[Domain Collection]
     C --> D[Live Verification]
     D --> E[IP Intelligence]
-    E --> F[📊 Asset Report]
+    E --> F[Asset Report]
 ```
 
 </div>
@@ -434,27 +432,27 @@ graph TD
 ### 🔍 Core Reconnaissance Tools
 | Tool | Purpose | Repository |
 |------|---------|------------|
-| **Amass** | Advanced subdomain enumeration | [OWASP/Amass](https://github.com/OWASP/Amass) |
-| **SubFinder** | Passive subdomain discovery | [projectdiscovery/subfinder](https://github.com/projectdiscovery/subfinder) |
-| **Nuclei** | Vulnerability scanning | [projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei) |
-| **HTTPX** | HTTP probing | [projectdiscovery/httpx](https://github.com/projectdiscovery/httpx) |
-| **Naabu** | Port scanning | [projectdiscovery/naabu](https://github.com/projectdiscovery/naabu) |
+| Amass | Advanced subdomain enumeration | [OWASP/Amass](https://github.com/OWASP/Amass) |
+| SubFinder | Passive subdomain discovery | [projectdiscovery/subfinder](https://github.com/projectdiscovery/subfinder) |
+| Nuclei | Vulnerability scanning | [projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei) |
+| HTTPX | HTTP probing | [projectdiscovery/httpx](https://github.com/projectdiscovery/httpx) |
+| Naabu | Port scanning | [projectdiscovery/naabu](https://github.com/projectdiscovery/naabu) |
 
 ### 🎭 Specialized Tools
 | Tool | Purpose | Repository |
 |------|---------|------------|
-| **SubJack** | Subdomain takeover | [haccer/subjack](https://github.com/haccer/subjack) |
-| **GAU** | URL gathering | [lc/gau](https://github.com/lc/gau) |
-| **FFUF** | Web fuzzing | [ffuf/ffuf](https://github.com/ffuf/ffuf) |
-| **Dirsearch** | Directory brute force | [maurosoria/dirsearch](https://github.com/maurosoria/dirsearch) |
-| **SecretFinder** | Secret detection in JS | [m4ll0k/SecretFinder](https://github.com/m4ll0k/SecretFinder) |
+| SubJack | Subdomain takeover | [haccer/subjack](https://github.com/haccer/subjack) |
+| GAU | URL gathering | [lc/gau](https://github.com/lc/gau) |
+| FFUF | Web fuzzing | [ffuf/ffuf](https://github.com/ffuf/ffuf) |
+| Dirsearch | Directory brute force | [maurosoria/dirsearch](https://github.com/maurosoria/dirsearch) |
+| SecretFinder | Secret detection in JS | [m4ll0k/SecretFinder](https://github.com/m4ll0k/SecretFinder) |
 
 ### 📱 403 Bypass Tools
 | Tool | Repository |
 |------|------------|
-| **byp4xx** | [lobuhi/byp4xx](https://github.com/lobuhi/byp4xx) |
-| **403bypasser** | [yunemse48/403bypasser](https://github.com/yunemse48/403bypasser) |
-| **bypass-403** | [iamj0ker/bypass-403](https://github.com/iamj0ker/bypass-403) |
+| byp4xx | [lobuhi/byp4xx](https://github.com/lobuhi/byp4xx) |
+| 403bypasser | [yunemse48/403bypasser](https://github.com/yunemse48/403bypasser) |
+| bypass-403 | [iamj0ker/bypass-403](https://github.com/iamj0ker/bypass-403) |
 
 ---
 
@@ -481,9 +479,9 @@ HuntTheBug/
 
 We welcome contributions! Here's how you can help:
 
-1. **🐛 Report Issues**: Found a bug? [Open an issue](https://github.com/vikrantbatra05/HuntTheBug/issues)
-2. **💡 Feature Requests**: Have an idea? [Suggest a feature](https://github.com/vikrantbatra05/HuntTheBug/issues)
-3. **🔧 Pull Requests**: Want to contribute code? [Submit a PR](https://github.com/vikrantbatra05/HuntTheBug/pulls)
+1. 🐛 **Report Issues**: Found a bug? [Open an issue](https://github.com/vikrantbatra05/HuntTheBug/issues)
+2. 💡 **Feature Requests**: Have an idea? [Suggest a feature](https://github.com/vikrantbatra05/HuntTheBug/issues)
+3. 🔧 **Pull Requests**: Want to contribute code? [Submit a PR](https://github.com/vikrantbatra05/HuntTheBug/pulls)
 
 ### 📋 Development Guidelines
 - Follow existing code style
@@ -495,7 +493,16 @@ We welcome contributions! Here's how you can help:
 
 ## 📜 License
 
-This project is licensed under the **GNU General Public License v3.0** - see the [LICENSE](LICENSE) file for details.
+<div align="center">
+
+```diff
+! 📝 This project is licensed under the GNU General Public License v3.0
+! 📄 See the LICENSE file for details
+! ✅ Free to use, modify, and distribute
+! ⚖️ Must retain original copyright and license
+```
+
+</div>
 
 ---
 
@@ -504,10 +511,10 @@ This project is licensed under the **GNU General Public License v3.0** - see the
 Special thanks to all the open-source tools that make HuntTheBug possible:
 
 ### 🔧 Tool Authors
-- **ProjectDiscovery** - For amazing tools like Nuclei, SubFinder, HTTPX, Naabu
-- **TomNomNom** - For incredible reconnaissance tools
-- **OWASP** - For the Amass project
-- **All other tool authors** - Your contributions are invaluable!
+- ProjectDiscovery - For amazing tools like Nuclei, SubFinder, HTTPX, Naabu
+- TomNomNom - For incredible reconnaissance tools
+- OWASP - For the Amass project
+- All other tool authors - Your contributions are invaluable!
 
 ### 🌟 Community
 - The bug bounty community for feedback and suggestions
@@ -603,104 +610,15 @@ nano conf.zsh
 
 ---
 
-## 🤝 Contributing
-
 <div align="center">
 
-### 🌟 **How to Contribute**
-
-```mermaid
-graph LR
-    A[🍴 Fork Repo] --> B[🔧 Make Changes]
-    B --> C[✅ Test Thoroughly]
-    C --> D[📤 Pull Request]
-    D --> E[🎉 Get Merged]
-```
-
-</div>
-
-We welcome contributions! Here's how you can help:
-
-1. **🐛 Report Issues**: Found a bug? [Open an issue](https://github.com/vikrantbatra05/HuntTheBug/issues)
-2. **💡 Feature Requests**: Have an idea? [Suggest a feature](https://github.com/vikrantbatra05/HuntTheBug/issues)
-3. **🔧 Pull Requests**: Want to contribute code? [Submit a PR](https://github.com/vikrantbatra05/HuntTheBug/pulls)
-
-### 📋 Development Guidelines
-- Follow existing code style
-- Test your changes thoroughly
-- Update documentation as needed
-- Ensure compatibility with Kali Linux
-
----
-
-## 📜 License
-
-<div align="center">
-
-```diff
-! This project is licensed under the GNU General Public License v3.0
-! See the LICENSE file for details
-! Free to use, modify, and distribute
-! Must retain original copyright and license
-```
-
-</div>
-
----
-
-## 🙏 Acknowledgments
-
-<div align="center">
-
-### 🔧 **Tool Authors & Projects**
-
-| �️ **Category** | 👥 **Contributors** | 🌟 **Special Thanks** |
-|----------------|-------------------|---------------------|
-| **Reconnaissance** | ProjectDiscovery, TomNomNom, OWASP | Amazing tools that power this framework |
-| **Scanning** | Nuclei Team, FFUF Team | Comprehensive vulnerability detection |
-| **Wordlists** | SecLists, Raft Project | Essential for successful fuzzing |
-| **Community** | Bug Bounty Hunters | Feedback, testing, and improvements |
-
-### 🌟 **Community Support**
-- The bug bounty community for valuable feedback
-- Security researchers who test and improve these tools
-- Everyone who contributes to open-source security
-- All tool authors for making this possible
-
-</div>
-
----
-
-## 📞 Support & Contact
-
-<div align="center">
-
-### 🐦 **Connect With Me**
-**Twitter**: [@Vikrant_infosec](https://twitter.com/Vikrant_infosec)
-
-### 📧 **Get Help**
-- 🐛 [Report Issues](https://github.com/vikrantbatra05/HuntTheBug/issues)
-- 💡 [Feature Requests](https://github.com/vikrantbatra05/HuntTheBug/issues)
-- 📖 [Documentation](https://github.com/vikrantbatra05/HuntTheBug/wiki)
-
-### ☕ **Support Development**
-If you find this tool helpful, consider supporting its development:
-
-<p><a href="https://www.buymeacoffee.com/vikrantbatra05"> <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="vikrantbatra05" /></a></p>
-
-</div>
-
----
-
-<div align="center">
-
-# �🔥 Happy Hunting! May you find many bugs! 🔥
+# 🔥 Happy Hunting! May you find many bugs! 🔥
 
 ## Built with ❤️ for the Bug Bounty Community
 
 ---
 
-**⭐ If you like this project, please give it a star! ⭐**
+⭐ **Star History Chart** ⭐
 
 [![Star History Chart](https://api.star-history.com/svg?repos=vikrantbatra05/HuntTheBug&type=Date)](https://star-history.com/#vikrantbatra05/HuntTheBug&Date)
 
