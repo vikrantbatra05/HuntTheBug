@@ -1,249 +1,292 @@
-# HuntTheBug
+<div align="center">
 
-Basic Recon For Bug Bounty Hunter - "HuntTheBug" is Basic Scripts For Sub Domain Enumeration> Live Domain Enumeration > Sub Domain Hijack > URL + JavaScript Scan > Dir Brute Forcing > Open Port Check With Telegram Bot Notification 
+# 🔍 HuntTheBug
 
-Installation Process >
+[![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://opensource.org/licenses/GPL-3.0)
+[![Platform](https://img.shields.io/badge/Platform-Kali%20Linux-lightgrey.svg)](https://www.kali.org/)
+[![Shell](https://img.shields.io/badge/Shell-Zsh-yellow.svg)](https://www.zsh.org/)
+[![Bug Bounty](https://img.shields.io/badge/Focus-Bug%20Bounty-red.svg)](https://bugcrowd.com/)
 
-Note : This Tested On **Kali Linux**. You Must Install As `Root User` in Your **Root User Home Folder - /root/.**
+**🚀 Advanced Reconnaissance Framework for Bug Bounty Hunters**
 
-System Requiremet > **2 Core CPU + 4 GB RAM**
+HuntTheBug is a comprehensive, automated reconnaissance toolkit designed specifically for bug bounty hunters and security researchers. It combines 30+ industry-leading tools into a unified workflow for efficient vulnerability discovery.
 
-We Test it On 1GB Ram + 1 Core CPU And System Crash.
+---
 
-## Installation  Process
+## 🎯 Features
 
-```
+### 🔓 **Subdomain Enumeration**
+- **Multi-Source Discovery**: Amass, SubFinder, Sublist3r, Crobat, AssetFinder, FindDomain, GitHub SubDomains, Subscraper
+- **Live Domain Verification**: HTTPX + Httprobe for active subdomain detection
+- **Status Code Analysis**: Hakcheckurl for 200/403 subdomain identification
+
+### 🎭 **Subdomain Takeover Detection**
+- **Automated Scanning**: SubJack + Nuclei for vulnerable subdomain identification
+- **Real-time Alerts**: Telegram bot notifications for immediate threat response
+
+### 🌐 **URL & JavaScript Analysis**
+- **Historical URL Discovery**: GAU + WaybackURLs for comprehensive endpoint mapping
+- **Live URL Verification**: FFUF for active endpoint confirmation
+- **Parameter Extraction**: ParamSpider for attack surface expansion
+- **JavaScript Mining**: SecretFinder + JSFinder for sensitive data extraction
+
+### 📁 **Directory & Port Scanning**
+- **Advanced Fuzzing**: Dirsearch with custom wordlists
+- **Port Discovery**: Naabu for open port identification
+- **Vulnerability Assessment**: Nuclei template-based scanning
+
+### 🏢 **Organization Intelligence**
+- **Reverse WHOIS**: Knockknock for corporate asset mapping
+- **IP Intelligence**: IPinfo for infrastructure analysis
+
+---
+
+## 🛠️ Installation
+
+### 📋 System Requirements
+- **OS**: Kali Linux (Tested on Root Environment)
+- **CPU**: 2+ Cores
+- **RAM**: 4GB+ Minimum
+- **Storage**: 10GB+ for tools and wordlists
+
+> ⚠️ **Warning**: Tested with 1GB RAM + 1 Core CPU resulted in system crashes. Ensure minimum requirements.
+
+### 🚀 Quick Install
+
+```bash
+# Install dependencies
 apt install zsh git -y
 
+# Clone the repository
 cd ~
-
 git clone https://github.com/vikrantbatra05/HuntTheBug
 
+# Navigate and setup
 cd ~/HuntTheBug
-
 chmod +x *.zsh
 
+# Run installation script
 ./install.zsh
-
 ```
 
-## After Install Process >
+---
 
-1. Config Amass + Subfinder For More Sub Domain
+## ⚙️ Configuration
 
-How To Config Amass Config File >
+### 🔧 Advanced Subdomain Tools Setup
 
-[https://medium.com/@tucuong97/guide-to-amass-how-to-use-amass-more-effectively-for-analyst-domain-a6c430046946](https://medium.com/@tucuong97/guide-to-amass-how-to-use-amass-more-effectively-for-analyst-domain-a6c430046946)
-
-How To Config Subfinder Config File >
-
-[https://dhiyaneshgeek.github.io/bug/bounty/2020/02/06/recon-with-me/](https://dhiyaneshgeek.github.io/bug/bounty/2020/02/06/recon-with-me/)
-
-
-```
-
+#### Amass Configuration
+```bash
 nano ~/HuntTheBug/config/amass-config.ini
+```
+📖 [Guide: Configure Amass Effectively](https://medium.com/@tucuong97/guide-to-amass-how-to-use-amass-more-effectively-for-analyst-domain-a6c430046946)
 
+#### SubFinder Configuration
+```bash
 nano ~/HuntTheBug/config/subfinder-config.yaml
-
-
 ```
+📖 [Guide: Configure SubFinder](https://dhiyaneshgeek.github.io/bug/bounty/2020/02/06/recon-with-me/)
 
-1. Config Telegram Boat + Find Domain + Github Token in conf.zsh
+### 📱 Telegram Bot Integration
 
-How To Config Telegram Boat >
-
-[https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id](https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id)
-
-[https://sean-bradley.medium.com/get-telegram-chat-id-80b575520659](https://sean-bradley.medium.com/get-telegram-chat-id-80b575520659)
-
-How Get Git Hub Token > 
-
-[https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-
-```
-
+```bash
 nano ~/HuntTheBug/conf.zsh
-
 ```
 
-## How To Use >
+**Setup Resources:**
+- 🤖 [Get Telegram Bot Token & Chat ID](https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id)
+- 🔐 [Alternative Chat ID Method](https://sean-bradley.medium.com/get-telegram-chat-id-80b575520659)
+- 📝 [GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
-If You Are Bug Bounty Hunter User This App For 
+---
 
-1. Mediam Scope Program - Example > *.target.com
+## 🎮 Usage Guide
 
-```
+### 🌐 Medium Scope Programs (*.target.com)
+```bash
 ./recon.zsh target.com
 ```
 
-2. Small Scope Program - Example > app.target.com or target.com
-
-```
+### 🎯 Small Scope Programs (app.target.com)
+```bash
 ./dom_hunt.zsh app.target.com
 ./dom_hunt.zsh target.com
 ```
 
-3. Reverse Domain Lookup For Organigation - Example > Google
-
+### 🏢 Organization Intelligence
+```bash
+./org_hunt.zsh organization_name
 ```
-./org_hunt.zsh org_name
-```
 
-4. 403 Bypass Check
-
-```
+### 🔓 403 Bypass Testing
+```bash
 ./403_hunt.zsh https://target.com
 ```
 
-## Recon Flow For Medium Scope [ recon.zsh ]
+---
 
-1. sub_hunt.zsh
+## 🔄 Workflow Breakdown
 
-```
-> Find Subdomain From > Amass + SubFinder + SubLis3R + Crobat + AsseFinder + Find Domain + GitHub SubDomain + Subscraper
-```
+### 📊 Medium Scope Reconnaissance (`recon.zsh`)
 
-```
-> Check Live Sub Domains From > HTTPX And Httprobe
-```
+| Phase | Tool(s) Used | Purpose |
+|-------|-------------|---------|
+| **1️⃣ Subdomain Discovery** | Amass, SubFinder, SubLis3R, Crobat, AssetFinder, FindDomain, GitHub, Subscraper | Comprehensive subdomain enumeration |
+| **2️⃣ Live Verification** | HTTPX, Httprobe | Active subdomain identification |
+| **3️⃣ Status Analysis** | Hakcheckurl | 200/403 subdomain filtering |
+| **4️⃣ Takeover Detection** | SubJack, Nuclei | Vulnerable subdomain identification |
+| **5️⃣ URL Discovery** | GAU, WaybackURLs | Historical endpoint mapping |
+| **6️⃣ Live URL Testing** | FFUF | Active endpoint verification |
+| **7️⃣ Parameter Mining** | ParamSpider | Attack surface expansion |
+| **8️⃣ JavaScript Analysis** | SecretFinder, JSFinder | Sensitive data extraction |
+| **9️⃣ Directory Fuzzing** | Dirsearch | Hidden endpoint discovery |
+| **🔟 Port Scanning** | Naabu | Open port identification |
+| **1️⃣1️⃣ Vulnerability Scanning** | Nuclei | Known vulnerability detection |
 
-```
-> Get 202 And 403 Subdomain With >  Hakcheckurl
-``` 
+### 🎯 Small Scope Reconnaissance (`dom_hunt.zsh`)
 
-2. sub_jack.zsh
+| Phase | Tool(s) Used | Purpose |
+|-------|-------------|---------|
+| **URL Discovery** | GAU, WaybackURLs | Historical endpoint collection |
+| **Live Testing** | FFUF | Active endpoint verification |
+| **Pattern Analysis** | GF Tool | Security pattern matching |
+| **Parameter Extraction** | ParamSpider | Parameter discovery |
+| **JavaScript Mining** | JSFinder, jsvar.sh | Endpoint and variable extraction |
+| **Secret Detection** | SecretFinder | Sensitive data discovery |
+| **Directory Fuzzing** | Dirsearch | Hidden directory discovery |
+| **Vulnerability Scanning** | Nuclei | Known vulnerability detection |
 
-```
-> Sub Domain Takeover Check WIth > SubJack + Nuclei
-```
+### 🏢 Organization Intelligence (`org_hunt.zsh`)
 
-3. url_hunt.zsh
+| Phase | Tool(s) Used | Purpose |
+|-------|-------------|---------|
+| **Domain Discovery** | Knockknock | Reverse WHOIS lookup |
+| **Live Verification** | HTTPX | Active domain confirmation |
+| **IP Intelligence** | IPinfo | Infrastructure analysis |
 
-```
-> Grab URLs From GAU + WaybackURLS
-```
+---
 
-```
-> Check Live URLS With FFUF
-```
+## 🛡️ Security Tools Integration
 
-```
-> Grab All URL WITH PERA-METER With ParamSpider
-```
+### 🔍 Core Reconnaissance Tools
+| Tool | Purpose | Repository |
+|------|---------|------------|
+| **Amass** | Advanced subdomain enumeration | [OWASP/Amass](https://github.com/OWASP/Amass) |
+| **SubFinder** | Passive subdomain discovery | [projectdiscovery/subfinder](https://github.com/projectdiscovery/subfinder) |
+| **Nuclei** | Vulnerability scanning | [projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei) |
+| **HTTPX** | HTTP probing | [projectdiscovery/httpx](https://github.com/projectdiscovery/httpx) |
+| **Naabu** | Port scanning | [projectdiscovery/naabu](https://github.com/projectdiscovery/naabu) |
 
-```
-> Javascript Hunting Grab All JS File And Find Secret With > SecretFinder + JSFinder
-```
+### 🎭 Specialized Tools
+| Tool | Purpose | Repository |
+|------|---------|------------|
+| **SubJack** | Subdomain takeover | [haccer/subjack](https://github.com/haccer/subjack) |
+| **GAU** | URL gathering | [lc/gau](https://github.com/lc/gau) |
+| **FFUF** | Web fuzzing | [ffuf/ffuf](https://github.com/ffuf/ffuf) |
+| **Dirsearch** | Directory brute force | [maurosoria/dirsearch](https://github.com/maurosoria/dirsearch) |
+| **SecretFinder** | Secret detection in JS | [m4ll0k/SecretFinder](https://github.com/m4ll0k/SecretFinder) |
 
-4. dir_hunt.zsh
+### 📱 403 Bypass Tools
+| Tool | Repository |
+|------|------------|
+| **byp4xx** | [lobuhi/byp4xx](https://github.com/lobuhi/byp4xx) |
+| **403bypasser** | [yunemse48/403bypasser](https://github.com/yunemse48/403bypasser) |
+| **bypass-403** | [iamj0ker/bypass-403](https://github.com/iamj0ker/bypass-403) |
 
-```
-> Directory Fuzzing With - Dirsearch
-```
+---
 
-5. port_hunt.zsh
-
-```
-> Find  All Open Ports With > Naabu
-```
-
-6. nuclei_hunt.zsh
-
-```
-> Check All Known Valn With Nuclei
-```
-
-## Recon Flow For Small Scope [ dom_hunt.zsh ]
-
-```
-> Grab All URL From GAU + WayBackURLS > Clean URL > Check Live URL
-```
-
-```
-> Find Secretes With > GF Tool
-```
-
-```
-> URLParameter With > ParamSpider
-```
-
-```
-> Greb All JS And Check Live
-```
+## 📁 Project Structure
 
 ```
-> Find URL - SUB - VAR in JS With JSFinder + jsvar.sh
+HuntTheBug/
+├── 📂 config/                 # Configuration files
+│   ├── amass-config.ini      # Amass settings
+│   └── subfinder-config.yaml # SubFinder settings
+├── 📂 wordlist/               # Custom wordlists
+│   ├── raft-*.txt            # Raft wordlists
+│   ├── all.txt               # Comprehensive wordlist
+│   └── dns-resolvers.txt     # DNS resolvers
+├── 🔧 *.zsh                   # Main reconnaissance scripts
+├── ⚙️ conf.zsh               # Global configuration
+├── 📦 install.zsh            # Installation script
+└── 📄 LICENSE                # GPL v3 License
 ```
 
-```
-> Find Secrets From JS Files with > SecretFinder
-```
+---
 
-```
-> Directory Brute Forsing With > Dirsearch
-```
+## 🤝 Contributing
 
-```
-> Check All Known Valn With Nuclei
-```
+We welcome contributions! Here's how you can help:
 
-## Recon Flow For Org Reverse Whois [ org_hunt.zsh ]
+1. **🐛 Report Issues**: Found a bug? [Open an issue](https://github.com/vikrantbatra05/HuntTheBug/issues)
+2. **💡 Feature Requests**: Have an idea? [Suggest a feature](https://github.com/vikrantbatra05/HuntTheBug/issues)
+3. **🔧 Pull Requests**: Want to contribute code? [Submit a PR](https://github.com/vikrantbatra05/HuntTheBug/pulls)
 
-```
-> Grab All Reverse Domains With > knockknock
-```
+### 📋 Development Guidelines
+- Follow existing code style
+- Test your changes thoroughly
+- Update documentation as needed
+- Ensure compatibility with Kali Linux
 
-```
-> Check Live Domains With > HTTPX
-```
+---
 
-```
-> Get Domain IP Info With > ipinfo
-```
+## 📜 License
 
-## Final Thought : If You Like This Script And Contribute And Make This Better Contact Me At Twitter - My ID : [@Vikrant_infosec](https://twitter.com/Vikrant_infosec)
+This project is licensed under the **GNU General Public License v3.0** - see the [LICENSE](LICENSE) file for details.
 
-## Credits Tools USED in 'HuntTheBug Tool' 
+---
 
-1. byp4xx - https://github.com/lobuhi/byp4xx
-2. 403bypasser - https://github.com/yunemse48/403bypasser
-3. bypass-403 - https://github.com/iamj0ker/bypass-403
-4. dirsearch - https://github.com/maurosoria/dirsearch
-5. gau - https://github.com/lc/gau
-6. waybackurls - https://github.com/tomnomnom/waybackurls
-7. ffuf - https://github.com/ffuf/ffuf
-8. gf - https://github.com/tomnomnom/gf
-9. Gf-Patterns - https://github.com/1ndianl33t/Gf-Patterns
-10. ParamSpider - https://github.com/devanshbatham/ParamSpider
-11. qsreplace - https://github.com/tomnomnom/qsreplace
-12. httpx - https://github.com/projectdiscovery/httpx
-13. JSFinder - https://github.com/Threezh1/JSFinder
-14. jsvar.sh -https://gist.githubusercontent.com/KathanP19/d2cda2f99c0b60d64b76ee6039b37e47/raw/eb105a4de06502b2732df9d682c61189c3703685/jsvar.sh
-15. SecretFinder - https://github.com/m4ll0k/SecretFinder
-16. nuclei - https://github.com/projectdiscovery/nuclei
-17. ipinfo - https://github.com/ipinfo/cli
-18. knockknock - https://github.com/harleo/knockknock
-19. naabu - https://github.com/projectdiscovery/naabu
-20. Amass - https://github.com/OWASP/Amass
-21. subfinder - https://github.com/projectdiscovery/subfinder
-22. Sublist3r - https://github.com/aboul3la/Sublist3r
-23. SonarSearch - https://github.com/Cgboal/SonarSearch
-24. assetfinder - https://github.com/tomnomnom/assetfinder
-25. Findomain - https://github.com/Findomain/Findomain
-26. github-subdomains -https://github.com/gwen001/github-subdomains
-27. subscraper -https://github.com/m8r0wn/subscraper
-28. httprobe - https://github.com/tomnomnom/httprobe
-29. hakcheckurl - https://github.com/hakluke/hakcheckurl
-30. subjack - https://github.com/haccer/subjack
+## 🙏 Acknowledgments
 
-### Other Open Source Tools From Kali APT
+Special thanks to all the open-source tools that make HuntTheBug possible:
 
-zsh curl wget command-not-found git htop ncdu glances exa zsh-autosuggestions zsh-syntax-highlighting python-is-python3 python3-pip parallel at tree cron golang-go amass subfinder sublist3r ffuf dirsearch naabu figlet
+### 🔧 Tool Authors
+- **ProjectDiscovery** - For amazing tools like Nuclei, SubFinder, HTTPX, Naabu
+- **TomNomNom** - For incredible reconnaissance tools
+- **OWASP** - For the Amass project
+- **All other tool authors** - Your contributions are invaluable!
 
-Thanks All Open Source Tool Maker 🙏🙏🙏🙏
+### 🌟 Community
+- The bug bounty community for feedback and suggestions
+- Security researchers who test and improve these tools
+- Everyone who contributes to open-source security
 
-<br>
+---
 
-<h3 align="left">Support:</h3>
+## 📞 Support & Contact
+
+### 🐦 Twitter
+Follow me on Twitter: [@Vikrant_infosec](https://twitter.com/Vikrant_infosec)
+
+### ☕ Buy Me a Coffee
+If you find this tool helpful, consider supporting its development:
+
 <p><a href="https://www.buymeacoffee.com/vikrantbatra05"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="vikrantbatra05" /></a></p><br><br>
+
+---
+
+## ⚡ Quick Start Commands
+
+```bash
+# Clone and install
+git clone https://github.com/vikrantbatra05/HuntTheBug
+cd ~/HuntTheBug
+chmod +x *.zsh
+./install.zsh
+
+# Configure your settings
+nano conf.zsh
+
+# Start hunting!
+./recon.zsh target.com
+```
+
+---
+
+<div align="center">
+
+**🔥 Happy Hunting! May you find many bugs! 🔥**
+
+*Built with ❤️ for the Bug Bounty Community*
+
+</div>
