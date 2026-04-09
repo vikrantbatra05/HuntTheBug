@@ -1,0 +1,34 @@
+# Recon output directories created during tool execution
+SUB_HUNT/
+URL_HUNT/
+DIR_HUNT/
+PORT_HUNT/
+403_HUNT/
+ORG_HUNT/
+NUCLEI_HUNT/
+
+# Tool output and temporary files
+*.txt
+!wordlist/*.txt
+*.log
+*.csv
+*.json
+*.xml
+*.html
+
+# Config with secrets (API keys, Telegram tokens)
+conf.zsh
+
+# Common system files
+.DS_Store
+Thumbs.db
+*~
+
+# Go binaries (if tools are built locally)
+*.exe
+*.out
+
+# Python artifacts (if any helper scripts added)
+__pycache__/
+*.pyc
+.venv/
